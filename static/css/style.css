@@ -1,0 +1,147 @@
+body, html{
+	height: 100%;
+	width: 100%;
+	background-color: var(--bs-body-color) !important;
+	overscroll-behavior: none;
+	text-align: center;
+}
+
+*{
+	font-size: 3vh;
+	margin: 0;
+	color-scheme: dark;
+}
+
+#keyboard{
+	width: 100%;
+}
+
+#joystick{
+	height: 30vh;
+	aspect-ratio: 1/1;
+	border-radius: 100%;
+}
+
+#keyboard{
+	text-align: center;
+	height: 70vh;
+	display: grid;
+	gap: .15em;
+	grid-template-areas:
+		'r2 r2 r2 r2 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r12 r12 r12 r12'
+		'r2 r2 r2 r2 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r13 r12 r12 r12 r12'
+		'r3 r3 r3 r3 r3 r3 r3 r3 r4 r4 r4 r4 r4 r4 r4 r4 r5 r5 r5 r5 r5 r5 r5 r5'
+		'r3 r3 r3 r3 r3 r3 r3 r3 r4 r4 r4 r4 r4 r4 r4 r4 r5 r5 r5 r5 r5 r5 r5 r5'
+		'r6 r6 r6 r6 r6 r6 r7 r7 r7 r7 r7 r7 r8 r8 r8 r8 r8 r8 r9 r9 r9 r9 r9 r9'
+		'r6 r6 r6 r6 r6 r6 r7 r7 r7 r7 r7 r7 r8 r8 r8 r8 r8 r8 r9 r9 r9 r9 r9 r9'
+		'r10 r10 r10 r11 r11 r14 r14 r14 r14 r14 r14 r14 r16 r16 r16 r17 r17 r17 r17 r17 r17 r19 r19 r19'
+		'r10 r10 r10 r11 r11 r15 r15 r15 r15 r15 r15 r15 r16 r16 r16 r18 r18 r18 r18 r18 r18 r19 r19 r19';
+	justify-content: space-evenly;
+}
+
+.key{
+	border: 0;
+	outline: none;
+	border-radius: 1vw;
+}
+
+.r1{
+	grid-area: r1;
+}
+
+.r2{
+	grid-area: r2;
+}
+
+.r3{
+	grid-area: r3;
+}
+
+.r4{
+	grid-area: r4;
+}
+
+.r5{
+	grid-area: r5;
+}
+
+.r6{
+	grid-area: r6;
+}
+
+.r7{
+	grid-area: r7;
+	overflow: hidden;
+}
+
+.r8{
+	grid-area: r8;
+}
+
+.r9{
+	grid-area: r9;
+}
+
+.r10{
+	grid-area: r10;
+}
+
+.r11{
+	grid-area: r11;
+}
+
+.r12{
+	grid-area: r12;
+}
+
+.r13{
+	grid-area: r13;
+}
+
+.r14{
+	grid-area: r14;
+}
+
+.r15{
+	grid-area: r15;
+}
+
+.r16{
+	grid-area: r16;
+}
+
+.r17{
+	grid-area: r17;
+}
+
+.r18{
+	grid-area: r18;
+}
+
+.r19{
+	grid-area: r19;
+}
+
+#more{
+	position: sticky;
+	display: none;
+}
+
+.r3, .r4, .r5{
+	width: calc(100vw/3);
+}
+
+i{
+	pointer-events: none;
+}
+
+#lthist{
+	transform: scale(.7);
+	position: absolute;
+	margin-left: -1ch;
+	margin-top: .9ch;
+}
+
+#lthist::before{
+	background-color: buttonface;
+}
